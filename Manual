@@ -1,0 +1,16 @@
+In order to get it working efficiently, you must follow the following guidilines :
+
+STEP 1 => open terminal in your respective python interpreter
+
+*now type the following in your terminal window
+
+step 2 => "pip install --upgrade pip"
+step 3 => "pip install pipwin"
+step 4 => "pipwin install pywhatkit"
+step 5 => "pip install SpeechRecognition"
+step 6 => "pip install wikipedia"
+step 7 => "pip install pyttsx3"
+
+NOW copy paste the raw code in your python interpreter.
+
+Hope you like it.
