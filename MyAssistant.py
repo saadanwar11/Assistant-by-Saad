@@ -60,5 +60,7 @@ def run_alexa():
     elif 'thank' in command:
         print('Its my pleasure Sir')
         talk('Its my pleasure Sir')
+
+        
 while True:
     run_alexa()
