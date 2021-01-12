@@ -1,3 +1,5 @@
+#read the MANUAL first.
+
 import speech_recognition as sr
 import pyttsx3
 import pywhatkit
@@ -41,19 +43,18 @@ def run_alexa():
         time = datetime.datetime.now().strftime('%I:%M %p')
         print(time)
         talk('Current time is ' + time)
-    elif 'who is' in command:
-        person = command.replace('who is', '')
-        info = wikipedia.summary(person, 1)
-        print(info)
-        talk(info)
     elif 'morning' in command:
         print('Good Morning Boss')
         talk('Good Morning Boss')
     elif 'how are you' in command:
-        print('I am doing good Boss')
-        talk('I am doing good Boss')
+        print('I am doing good, Boss')
+        talk('I am doing good, Boss')
     elif 'what is' in command:
         search = command.replace('what is', '')
+        talk('showing results for' + command)
+        webbrowser.open('https://google.com/?#q=' + command)
+    elif 'who is' in command:
+        person = command.replace('who is', '')
         talk('showing results for' + command)
         webbrowser.open('https://google.com/?#q=' + command)
     elif 'thank' in command:
