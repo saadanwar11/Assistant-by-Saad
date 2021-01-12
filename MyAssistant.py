@@ -35,6 +35,7 @@ def take_command():
 def run_alexa():
     command = take_command()
     print(command)
+    talk('Hi Saad, what can I do ?')
     if 'play' in command:
         song = command.replace('play', '')
         talk('playing ' + song)
@@ -44,11 +45,11 @@ def run_alexa():
         print(time)
         talk('Current time is ' + time)
     elif 'morning' in command:
-        print('Good Morning Boss')
-        talk('Good Morning Boss')
+        print('Good Morning Saad')
+        talk('Good Morning Saad')
     elif 'how are you' in command:
-        print('I am doing good, Boss')
-        talk('I am doing good, Boss')
+        print('I am doing good, Saad')
+        talk('I am doing good, Saad')
     elif 'what is' in command:
         search = command.replace('what is', '')
         talk('showing results for' + command)
@@ -58,8 +59,8 @@ def run_alexa():
         talk('showing results for' + command)
         webbrowser.open('https://google.com/?#q=' + command)
     elif 'thank' in command:
-        print('Its my pleasure Sir')
-        talk('Its my pleasure Sir')
+        print('Its my pleasure Saad')
+        talk('Its my pleasure Saad')
 
         
 while True:
