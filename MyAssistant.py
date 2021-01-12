@@ -34,10 +34,11 @@ def take_command():
         pass
     return command
 
+talk('Hi Saad, what can I do ?')
+
 def run_alexa():
     command = take_command()
     print(command)
-    talk('Hi Saad, what can I do ?')
     if 'play' in command:
         song = command.replace('play', '')
         talk('playing ' + song)
